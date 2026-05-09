@@ -13,9 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit common Infinity-X configurations
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/matrixx/config/common_full_phone.mk)
 
-$(call inherit-product, vendor/infinity/config/BoardConfigReservedSize.mk)
+$(call inherit-product, vendor/matrixx/config/BoardConfigReservedSize.mk)
 
 # Inherit device configurations
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
@@ -25,15 +25,14 @@ $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 
 # Infinity-X Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-INFINITY_BUILD_TYPE := OFFICIAL
-TARGET_SUPPORTS_BLUR := true
-INFINITY_MAINTAINER := "kAiF"
-USE_MOTO_CALCULATOR := true
-WITH_GAPPS := true
+MATRIXX_MAINTAINER := iRFAN
+WITH_GMS := true
+WITH_GMS_COMMS_SUITE := true
+
 
 ## Device identifier
 PRODUCT_DEVICE := sky
-PRODUCT_NAME := infinity_sky
+PRODUCT_NAME := matrixx_sky
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 23076RN4BI
 PRODUCT_MANUFACTURER := Xiaomi

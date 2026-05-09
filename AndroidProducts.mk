@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_sky.mk
+    $(LOCAL_DIR)/matrixx_sky.mk
